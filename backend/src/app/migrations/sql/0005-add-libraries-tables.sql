@@ -64,7 +64,7 @@ CREATE TABLE icon_library (
   name text NOT NULL
 );
 
-CREATE INDEX icon_colection__team_id__idx
+CREATE INDEX icon_collection__team_id__idx
     ON icon_library (team_id);
 
 CREATE TRIGGER icon_library__modified_at__tgr
@@ -107,7 +107,7 @@ CREATE TABLE color_library (
   name text NOT NULL
 );
 
-CREATE INDEX color_colection__team_id__idx
+CREATE INDEX color_collection__team_id__idx
     ON color_library (team_id);
 
 CREATE TRIGGER color_library__modified_at__tgr
