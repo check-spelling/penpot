@@ -1,7 +1,7 @@
 ALTER TABLE file
   ADD COLUMN has_media_trimmed boolean DEFAULT false;
 
-CREATE INDEX file__modified_at__has_media_trimed__idx
+CREATE INDEX file__modified_at__has_media_trimmed__idx
     ON file(modified_at)
  WHERE has_media_trimmed IS false;
 
