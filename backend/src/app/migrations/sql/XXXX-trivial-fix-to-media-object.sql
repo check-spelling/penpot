@@ -1,0 +1,1 @@
+alter index media_bject__file_id__idx rename to media_object__file_id__idx;
